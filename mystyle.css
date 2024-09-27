@@ -54,7 +54,7 @@ main {
     text-align: center;
 }
 
-.video, .this-is-me {
+.video, .boxshow {
     background-color: #ffffff;
     margin: 20px auto;
     padding: 20px;
@@ -71,7 +71,7 @@ video {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-.this-is-me img {
+.boxshow img {
     width: 80%;
     height: auto;
     margin-top: 10px;
