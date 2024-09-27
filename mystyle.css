@@ -12,7 +12,9 @@ header {
     text-align: center;
     box-shadow: 0px 0px 15px rgba(19, 0, 0, 0.978);
     position: sticky;
-    top: 0;
+    top: 0px;
+    width: 100%;
+    
 }
 
 nav ul {
@@ -60,7 +62,7 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    width: 80%;
+    width: 100%;
 }
 
 video {
@@ -111,4 +113,20 @@ audio {
     width: 80%;
     border-radius: 10px;
     padding: 10px;
+}
+
+
+/*ต่อจากนี้จะเป็นส่วนที่เพิ่มขึ้นของ My journey*/
+.year-container {
+    display: flex;
+    justify-content: space-around; /*เพื่อกระจายกำหนดให้ช่องว่างระหว่างกล่องเท่ากัน*/
+    gap: 20px;
+}
+.year {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+    width: 23%;
 }
