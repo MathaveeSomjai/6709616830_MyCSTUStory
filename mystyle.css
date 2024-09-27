@@ -1,0 +1,112 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+}
+
+/*กล่องด้านบน*/
+header {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 15px rgba(19, 0, 0, 0.978);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; 
+}
+
+/*ขนาดและบรรทัดหน้าอื่น (infuture)*/
+nav ul li {
+    display: inline;
+    margin: 12px;
+}
+
+/*เอาไว้ทำให้หน้าอื่นไม่ใช่Hyperlink*/
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 18px;
+    
+}
+
+h1 {
+    margin-top: 10px;
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+
+/*กล่องข้อความ*/
+
+h2 {
+    font-size: 23px;
+    color: #34495e;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.video, .this-is-me {
+    background-color: #ffffff;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 80%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.this-is-me img {
+    width: 80%;
+    height: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+
+/*เอาไว้ทำปุ่มซ่อนข้อความ บ่งตรงว่างงการใช้อยู่ สาธุขอให้ไม่บัค 
+ซ่อนเช็คบล็อค สไตล์ปุ่ม ซ่อนข้อความเริ่มต้น แสดงข้อความเมื่อเช็คบล็อคถูกเลือก ตามลำดับ*/
+input[type="checkbox"] {
+    display: none;
+}
+
+/* สไตล์ปุ่ม */
+label {
+    display: inline-block;
+    background-color: #97bed8;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* ซ่อนข้อความที่ต้องการ */
+.content {
+    display: none;
+    margin-top: 10px;
+}
+
+/* เมื่อ checkbox ถูกคลิก ให้แสดงข้อความ 3*/
+input[type="checkbox"]:checked + label + .content {
+    display: block;
+}
+
+audio {
+    width: 80%;
+    border-radius: 10px;
+    padding: 10px;
+}
