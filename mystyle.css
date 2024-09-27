@@ -2,6 +2,8 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f8f8;
     margin: 0;
+    overflow-x: hidden; /*ซ่อนแถบเลื่อนในแนวแกน x*/
+    
 }
 
 /*กล่องด้านบน*/
@@ -49,6 +51,12 @@ h1 {
 h2 {
     font-size: 23px;
     color: #34495e;
+
+}
+
+h3 {
+    font-size: 18px;
+    color: #34495e;
 }
 
 main {
@@ -62,7 +70,7 @@ main {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 90%;
 }
 
 video {
@@ -74,9 +82,9 @@ video {
 }
 
 .boxshow img {
-    width: 80%;
+    width: 50%;
     height: auto;
-    margin-top: 10px;
+    margin: 10px;
     border-radius: 10px;
     border: 1px solid #ddd;
 }
@@ -130,3 +138,8 @@ audio {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
     width: 23%;
 }
+
+/*ใช้เพื่อเพิ่มลูกเล่น เมื่อเอาเม้สชี้กล่องในคลาสyearจะใหญ่ขึ้น*/
+ .year:hover {
+     transform: scale(1.05);
+ }
