@@ -15,7 +15,6 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0px 0px 15px rgba(19, 0, 0, 0.978);
-    position: sticky;
     top: 0px;
     width: 100%;
 }
@@ -134,6 +133,11 @@ audio {
     padding: 10px;
 }
 
+/*ใช้เพื่อเพิ่มลูกเล่น เมื่อเอาเม้สชี้กล่องในคลาสyearจะใหญ่ขึ้น*/
+.year:hover {
+    transform: scale(1.05);
+}
+
 @media only screen and (max-width:768px) {
 
     /*for mobile phone*/
@@ -245,4 +249,5 @@ audio {
         width: 100%;
     }
 }
+
 
