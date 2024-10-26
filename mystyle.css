@@ -2,8 +2,9 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f8f8;
     margin: 0;
-    overflow-x: hidden; /*ซ่อนแถบเลื่อนในแนวแกน x*/
-    
+    overflow-x: hidden;
+    /*ซ่อนแถบเลื่อนในแนวแกน x*/
+
 }
 
 /*กล่องด้านบน*/
@@ -16,19 +17,33 @@ header {
     position: sticky;
     top: 0px;
     width: 100%;
-    
+
 }
 
-nav ul {
-    list-style: none;
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.menu {
+    float: left;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-    margin: 0; 
 }
 
-/*ขนาดและบรรทัดหน้าอื่น (infuture)*/
-nav ul li {
-    display: inline;
-    margin: 12px;
+.menu li {
+    padding: 8px;
+    margin-bottom: 7px;
+    background-color: #2c3e50;
+    color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 /*เอาไว้ทำให้หน้าอื่นไม่ใช่Hyperlink*/
@@ -36,7 +51,6 @@ nav ul li a {
     color: #ecf0f1;
     text-decoration: none;
     font-size: 18px;
-    
 }
 
 h1 {
@@ -59,12 +73,14 @@ h3 {
     color: #34495e;
 }
 
+
 main {
     padding: 20px;
     text-align: center;
 }
 
-.video, .boxshow {
+.video,
+.boxshow {
     background-color: #ffffff;
     margin: 20px auto;
     padding: 20px;
@@ -113,7 +129,7 @@ label {
 }
 
 /* เมื่อ checkbox ถูกคลิก ให้แสดงข้อความ 3*/
-input[type="checkbox"]:checked + label + .content {
+input[type="checkbox"]:checked+label+.content {
     display: block;
 }
 
@@ -127,10 +143,12 @@ audio {
 /*ต่อจากนี้จะเป็นส่วนที่เพิ่มขึ้นของ My journey*/
 .year-container {
     display: flex;
-    justify-content: space-around; /*เพื่อกระจายกำหนดให้ช่องว่างระหว่างกล่องเท่ากัน*/
+    justify-content: space-around;
+    /*เพื่อกระจายกำหนดให้ช่องว่างระหว่างกล่องเท่ากัน*/
     gap: 20px;
     padding-top: 20px;
 }
+
 .year {
     background-color: #ffffff;
     border: 1px solid #ddd;
@@ -139,7 +157,8 @@ audio {
     box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
     width: 23%;
 }
+
 /*ใช้เพื่อเพิ่มลูกเล่น เมื่อเอาเม้สชี้กล่องในคลาสyearจะใหญ่ขึ้น*/
- .year:hover {
-     transform: scale(1.05);
- }
+.year:hover {
+    transform: scale(1.05);
+}
