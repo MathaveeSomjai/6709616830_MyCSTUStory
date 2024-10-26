@@ -1,10 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f8f8f8;
     margin: 0;
-    overflow-x: hidden;
-    /*ซ่อนแถบเลื่อนในแนวแกน x*/
-
 }
 
 /*กล่องด้านบน*/
@@ -17,7 +18,6 @@ header {
     position: sticky;
     top: 0px;
     width: 100%;
-
 }
 
 .row::after {
@@ -62,6 +62,28 @@ h1 {
 
 /*กล่องข้อความ*/
 
+.boxshow {
+    float: left;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    width: 90%;
+}
+
+.video {
+    float: left;
+    padding: 15px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+}
+
+video {
+    max-width: 100%;
+}
+
 h2 {
     font-size: 23px;
     color: #34495e;
@@ -78,33 +100,6 @@ main {
     padding: 20px;
     text-align: center;
 }
-
-.video,
-.boxshow {
-    background-color: #ffffff;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
-    width: 90%;
-}
-
-video {
-    width: 100%;
-    height: auto;
-    margin: 10px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-}
-
-.boxshow img {
-    width: 50%;
-    height: auto;
-    margin: 10px;
-    border-radius: 10px;
-    border: 1px solid #ddd;
-}
-
 
 /*เอาไว้ทำปุ่มซ่อนข้อความ บ่งตรงว่างงการใช้อยู่ สาธุขอให้ไม่บัค 
 ซ่อนเช็คบล็อค สไตล์ปุ่ม ซ่อนข้อความเริ่มต้น แสดงข้อความเมื่อเช็คบล็อคถูกเลือก ตามลำดับ*/
@@ -139,31 +134,6 @@ audio {
     padding: 10px;
 }
 
-
-/*ต่อจากนี้จะเป็นส่วนที่เพิ่มขึ้นของ My journey*/
-.year-container {
-    display: flex;
-    justify-content: space-around;
-    /*เพื่อกระจายกำหนดให้ช่องว่างระหว่างกล่องเท่ากัน*/
-    gap: 20px;
-    padding-top: 20px;
-}
-
-.year {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-    width: 23%;
-}
-
-/*ใช้เพื่อเพิ่มลูกเล่น เมื่อเอาเม้สชี้กล่องในคลาสyearจะใหญ่ขึ้น*/
-.year:hover {
-    transform: scale(1.05);
-}
-
-/*คำสั่งสำหรับการrespondsive*/
 @media only screen and (max-width:768px) {
 
     /*for mobile phone*/
@@ -275,3 +245,4 @@ audio {
         width: 100%;
     }
 }
+
